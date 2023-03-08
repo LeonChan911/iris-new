@@ -1,0 +1,86 @@
+{
+  "name": "@xmly/iris-new",
+  "version": "1.1.1",
+  "description": "A command line tool for generating project template",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "authors": {
+    "name": "chenyin",
+    "email": "yin.chen@ximalaya.com"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "bin": {
+    "iris-new": "./dist/index.js"
+  },
+  "private": false,
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "rm -rf ./dist && tsc && cp gulpfile.js ./dist",
+    "lint": "eslint --ext **/*.ts",
+    "release": "np",
+    "test": "node ./dist/index.js ls",
+    "build-template": "gulp -h"
+  },
+  "np": {
+    "yarn": false
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.ximalaya.com:newretail/iris.git"
+  },
+  "bugs": {
+    "url": "http://gitlab.ximalaya.com/newretail/iris/issues"
+  },
+  "homepage": "http://gitlab.ximalaya.com/newretail/iris/blob/master/README.md",
+  "devDependencies": {
+    "@types/fs-extra": "^8.0.0",
+    "@types/glob": "^7.1.1",
+    "@types/inquirer": "^6.0.3",
+    "@types/metalsmith": "^2.3.0",
+    "@types/node": "^12.6.8",
+    "@types/rimraf": "^2.0.2",
+    "@types/table": "^4.0.6",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "np": "^6.2.3",
+    "prettier": "^1.18.2",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@types/klaw": "^3.0.1",
+    "@types/through2": "^2.0.36",
+    "axios": "^0.19.2",
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "download-git-repo": "^2.0.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.4",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-replace": "^1.0.0",
+    "handlebars": "^4.1.2",
+    "inquirer": "^6.5.0",
+    "klaw": "^3.0.0",
+    "latest-version": "^5.1.0",
+    "log-symbols": "^3.0.0",
+    "metalsmith": "^2.3.0",
+    "minimatch": "^3.0.4",
+    "ora": "^3.4.0",
+    "simple-git": "^2.37.0",
+    "table": "^5.4.4",
+    "through2": "^4.0.2",
+    "tslib": "^2.2.0"
+  },
+  "maintainers": [
+    "chenyin"
+  ]
+}

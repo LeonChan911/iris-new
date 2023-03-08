@@ -1,0 +1,22 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "allowJs": true,
+    "jsx": "react",
+    "lib": ["ES2020"],
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "declaration": false,
+    "module": "commonjs",
+    "rootDir": "src",
+    "strict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "target": "es2017"
+  }
+}
